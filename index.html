@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade de Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet"
+        integrity="sha384-CK2SzKma4jA5H/MXDUU7i1TqZlCFaD4T01vtyDFvPlD97JQyS+IsSh1nI2EFbpyk" crossorigin="anonymous">
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
+
+<!--
+
+1) Por que col-12 col-sm-6 col-lg-4 produz um resultado diferente de col-4 sozinho?
+Resposta: col-12 col-sm-6 col-lg-4 vai deixar layout responsivo dependendo da quantidade de coluna e 
+também de acordo com o tamanho da tela. Já col-4 vai manter o tamanho independente do tamanho da tela. 
+
+2) O que acontece com a sua grade se a soma das colunas de uma row passar de 12? Isso é erro?
+Resposta: O que não couber na linha vai para a linha seguinte. Não.
+
+3) Qual a diferença prática entre .container e .container-fluid na sua página?
+Resposta: .container mantém o centralizado e tem a largura maxima que varia de acordo com o tamanho da tela e o 
+.container-fluid ocupa 100% da largura ficando ponta a ponta
+
+4) Onde você usou data-bs-target e qual elemento cada um deles aponta?
+Resposta: Usei o data-bs-target na navbar, no botão "Ver cursos" e perguntas do accordion. 
+Na navbar o botão que abre o menu responsivo aponta para #navbarSupportedContent a div que guarda o menu responsivo. 
+No botão "Ver cursos" aponta para #modalMatricula a div do modal de matrícula. 
+No accordion os três botões apontam para #pergunta1, #pergunta2 e #pergunta3 as divs que guardam a resposta de cada pergunta. 
+Os itens também usam data-bs-parent="#faq" para abrir somente uma pergunta por vez.
+
+5) Três classes da apostila de 2022 que hoje estão descontinuadas — e por quais foram substituídas?
+Resposta: .text-muted por .text-body-secondary
+.navbar-dark por data-bs-theme="dark"
+.pl-* e .pr-* por .ps-* e .pe-*
+
+6) Se o bootstrap.bundle.min.js não carregar, quais partes da sua página param de funcionar e quais continuam?
+Resposta: Se o bootstrap.bundle.min.js não carregar o Bootstrap continuam funcionando,
+mas os componentes que dependem de JavaScript deixam de funcionar como o Navbar responsivo, Modal, Dropdown e Accordion.
+
+-->
