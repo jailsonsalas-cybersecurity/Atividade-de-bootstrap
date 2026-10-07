@@ -13,6 +13,304 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-body">
+        <div class="container">
+            <a class="navbar-brand" href="#"> PETSHOP</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Banho</a></li>
+                            <li><a class="dropdown-item" href="#">Corte</a></li>
+                            <li><a class="dropdown-item" href="#">Tosa</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+                <form class="d-flex ms-auto" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                    <button type="button" class="btn btn-success" aria-label="Buscar">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </form>
+
+                <a href="#" class="btn btn-outline-light position-relative ms-2" aria-label="Carrinho">
+                    <i class="bi bi-cart"></i>
+                    <span
+                        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">3</span>
+                </a>
+
+                <button type="button" class="btn btn-outline-success ms-2">Entrar</button>
+
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5 text-center bg-body-secondary"> <!-- destaque -->
+        <div class="container">
+            <h1 class="display-4">
+                Venha deixar seu cachorrinho tosadinho
+            </h1>
+
+            <p class="lead">
+                Você, seu pet, o pet do seu pet, todos amam nossa PETSHOP
+            </p>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalMatricula">
+                Conferir Serviços
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="mb-5">
+            <h2 class="mb-4">Nossos Tipos de Serviços</h2>
+            <div class="row g-4">
+                <!-- CARD 1 -->
+                <div class="col-12 col-sm-6 col-lg-8">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Serviço Romeu</h5>
+                            <p class="card-text"> Romeu é o nosso Golden Retriver
+                                De raça nobre, Romeu possui uma pelagem banhada em ouro.
+                                Venha conhecer o nosso atendimento nivel Romeu</p>
+                            <a href="#" class="btn btn-primary mt-auto">Quero atendimento Romeu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Julieta</h5>
+                            <p class="card-text"> Julieta é nossa LuLu das Palmeiras. Ela é banhada em diamantes</p>
+                            <a href="#" class="btn btn-primary mt-auto"> Solicitar serviço Julieta</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Bibu</h5>
+                            <p class="card-text"> Bidu é nosso vira-lata.
+                                Bidu é banhado em cinzas vulcanicas</p>
+                            <a href="#" class="btn btn-primary mt-auto">Solicitar serviço Bidu</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text"> Deixe seu pet com uma nova aparência
+                            </p>
+                            <a href="#" class="btn btn-primary mt-auto">Solicitar Serviços</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Metatron</h5>
+                            <p class="card-text"> Nosso Metraton recebe nosso serviço de ouro
+                                Metatron é banhado em lagos com cisnes brancos e flamingos rosas
+                            </p>
+                            <a href="#" class="btn btn-primary mt-auto">Solicitar serviço Metatron</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <section class="mb-5">
+                    <h2 class="mb-4">Horários</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Serviços</th>
+                                    <th>Tosadores</th>
+                                    <th>Horários</th>
+                                    <th>Vagas</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Tosador de cavalos</td>
+                                    <td>Riad Jr</td>
+                                    <td>8h - 12h | 14 - 18h</td>
+                                    <td>67</td>
+                                </tr>
+                                <tr>
+                                    <td>Tosador de pinguins norte americanos</td>
+                                    <td>Riad Senior</td>
+                                    <td>Agendar horário na recepção</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Tosador de cachorros</td>
+                                    <td>Wesley</td>
+                                    <td>Agendar horário na recepção</td>
+                                    <td> Disponível a partir de 11 de setembro</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section class="mb-5">
+                    <h2 class="mb-4">Agendar</h2>
+                    <form class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome"
+                                placeholder="Digite o nome do seu cachorro">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="curso" class="form-label">Curso</label>
+                            <select class="form-select" id="curso">
+                                <option selected>Escolha um </option>
+                                <option>HTML e CSS</option>
+                                <option>JavaScript</option>
+                                <option>Bootstrap</option>
+                                <option>Git e GitHub</option>
+                                <option>C e Lógica</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="telefone" class="form-label"> Telefone </label>
+                            <div class="input-group">
+                                <span class="input-group-text">+55</span>
+                                <input type="tel" class="form-control" id="telefone" placeholder="(45) 99999-9999">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="termos">
+                                <label class="form-check-label" for="termos"> Aceito os termos da inscrição. </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary"> Fazer inscrição </button>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="mb-5">
+
+                    <h2 class="mb-4">Perguntas frequentes</h2>
+
+                    <div class="accordion" id="faq">
+
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#pergunta1" aria-expanded="true" aria-controls="pergunta1">
+
+                                    Preciso ter cachorro?
+
+                                </button>
+                            </h2>
+
+                            <div id="pergunta1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+
+                                <div class="accordion-body">
+                                    Não. Se quiser, nós damos banhos em humanos.
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#pergunta2" aria-expanded="false" aria-controls="pergunta2">
+
+                                    Posso levar golfinhos?
+
+                                </button>
+                            </h2>
+
+                            <div id="pergunta2" class="accordion-collapse collapse" data-bs-parent="#faq">
+
+                                <div class="accordion-body">
+                                    Sim. Porem não daremos banhos em golfinhos sul africanos.
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="accordion-item">
+
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#pergunta3" aria-expanded="false" aria-controls="pergunta3">
+
+                                    Posso levar minha vó para assistir?
+
+                                </button>
+                            </h2>
+
+                            <div id="pergunta3" class="accordion-collapse collapse" data-bs-parent="#faq">
+
+                                <div class="accordion-body">
+                                    Sim. Sua vó será bem vinda.
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </section>
+
+    </main>
+
+    <footer data-bs-theme="dark" class="bg-body-tertiary text-light py-4">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="mb-0"> © 2026 — PETSHOP O PETSHOP DOS PETSHOP </p>
+
+                <div>
+                    <a href="#" class="text-light me-3" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="#" class="text-light me-3" aria-label="GitHub">
+                        <i class="bi bi-github"></i>
+                    </a>
+
+                    <a href="#" class="text-light" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
